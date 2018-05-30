@@ -1,0 +1,353 @@
+CREATE TABLE "anno"(
+    "KAnno" integer NOT NULL,
+    anno integer
+);
+
+CREATE TABLE "CdS" (
+    "KCdS" integer NOT NULL,
+    interclasse integer,
+    codicione character varying(20),
+    nome_corso character varying(20)
+ );
+
+ CREATE TABLE "ateneo" (
+    "KAteneo" integer NOT NULL,
+    code_un character varying(20),
+    codice character varying(20)
+ );
+
+ CREATE TABLE "geografia" (
+    "KGeografia" integer NOT NULL,
+    comune character varying(20),
+    id_comune character varying(20),
+    id_regione_macro_istat character varying(20),
+    regione_macro_istat character varying(20)
+ );
+
+ CREATE TABLE "classe" (
+    "KClasse" integer NOT NULL,
+    cod_classe character varying(20),
+    des_classe character varying(20)
+ );
+
+ CREATE TABLE "iC01_RomaTre" (
+    "KAnno" integer NOT NULL,
+    "KCdS" integer NOT NULL,
+    "KAteneo" integer NOT NULL,
+    "KGeografia" integer NOT NULL,
+    "KClasse" integer NOT NULL,
+    "NUMERATORE" numeric,
+    "DENOMINATORE" numeric
+ );
+
+ CREATE TABLE "iC01_Area" (
+    "KAnno" integer NOT NULL,
+    "KGeografia" integer NOT NULL,
+    "KClasse" integer NOT NULL,
+    "NUMERATORE" numeric,
+    "DENOMINATORE" numeric
+ );
+
+ CREATE TABLE "iC01_Italia" (
+    "KAnno" integer NOT NULL,
+    "KClasse" integer NOT NULL,
+    "NUMERATORE" numeric,
+    "DENOMINATORE" numeric
+ );
+
+CREATE TABLE "iC01_Area_no_classe" (
+    "KAnno" integer NOT NULL,
+    "KAteneo" integer NOT NULL,
+    "KGeografia" integer NOT NULL,
+    "NUMERATORE" numeric,
+    "DENOMINATORE" numeric
+ );
+
+CREATE TABLE "iC01_Italia_no_classe" (
+    "KAnno" integer NOT NULL,
+    "KAteneo" integer NOT NULL,
+    "NUMERATORE" numeric,
+    "DENOMINATORE" numeric
+ );
+
+ CREATE TABLE "iC02_RomaTre" (
+    "KAnno" integer NOT NULL,
+    "KCdS" integer NOT NULL,
+    "KAteneo" integer NOT NULL,
+    "KGeografia" integer NOT NULL,
+    "KClasse" integer NOT NULL,
+    "NUMERATORE" numeric,
+    "DENOMINATORE" numeric
+ );
+
+ CREATE TABLE "iC02_Area" (
+    "KAnno" integer NOT NULL,
+    "KGeografia" integer NOT NULL,
+    "KClasse" integer NOT NULL,
+    "NUMERATORE" numeric,
+    "DENOMINATORE" numeric
+ );
+
+ CREATE TABLE "iC02_Italia" (
+    "KAnno" integer NOT NULL,
+    "KClasse" integer NOT NULL,
+    "NUMERATORE" numeric,
+    "DENOMINATORE" numeric
+ );
+
+CREATE TABLE "iC02_Area_no_classe" (
+    "KAnno" integer NOT NULL,
+    "KAteneo" integer NOT NULL,
+    "KGeografia" integer NOT NULL,
+    "NUMERATORE" numeric,
+    "DENOMINATORE" numeric
+ );
+
+CREATE TABLE "iC02_Italia_no_classe" (
+    "KAnno" integer NOT NULL,
+    "KAteneo" integer NOT NULL,
+    "NUMERATORE" numeric,
+    "DENOMINATORE" numeric
+ );
+
+CREATE TABLE "iC06_RomaTre" (
+    "KAnno" integer NOT NULL,
+    "KCdS" integer NOT NULL,
+    "KAteneo" integer NOT NULL,
+    "KGeografia" integer NOT NULL,
+    "KClasse" integer NOT NULL,
+    "NUMERATORE" numeric,
+    "DENOMINATORE" numeric
+ );
+
+ CREATE TABLE "iC06_Area" (
+    "KAnno" integer NOT NULL,
+    "KGeografia" integer NOT NULL,
+    "KClasse" integer NOT NULL,
+    "NUMERATORE" numeric,
+    "DENOMINATORE" numeric
+ );
+
+ CREATE TABLE "iC06_Italia" (
+    "KAnno" integer NOT NULL,
+    "KClasse" integer NOT NULL,
+    "NUMERATORE" numeric,
+    "DENOMINATORE" numeric
+ );
+
+CREATE TABLE "iC06_Area_no_classe" (
+    "KAnno" integer NOT NULL,
+    "KAteneo" integer NOT NULL,
+    "KGeografia" integer NOT NULL,
+    "NUMERATORE" numeric,
+    "DENOMINATORE" numeric
+ );
+
+CREATE TABLE "iC06_Italia_no_classe" (
+    "KAnno" integer NOT NULL,
+    "KAteneo" integer NOT NULL,
+    "NUMERATORE" numeric,
+    "DENOMINATORE" numeric
+ );
+
+CREATE TABLE "iC14_RomaTre" (
+    "KAnno" integer NOT NULL,
+    "KCdS" integer NOT NULL,
+    "KAteneo" integer NOT NULL,
+    "KGeografia" integer NOT NULL,
+    "KClasse" integer NOT NULL,
+    "NUMERATORE" numeric,
+    "DENOMINATORE" numeric
+ );
+
+ CREATE TABLE "iC14_Area" (
+    "KAnno" integer NOT NULL,
+    "KGeografia" integer NOT NULL,
+    "KClasse" integer NOT NULL,
+    "NUMERATORE" numeric,
+    "DENOMINATORE" numeric
+ );
+
+ CREATE TABLE "iC14_Italia" (
+    "KAnno" integer NOT NULL,
+    "KClasse" integer NOT NULL,
+    "NUMERATORE" numeric,
+    "DENOMINATORE" numeric
+ );
+
+CREATE TABLE "iC14_Area_no_classe" (
+    "KAnno" integer NOT NULL,
+    "KAteneo" integer NOT NULL,
+    "KGeografia" integer NOT NULL,
+    "NUMERATORE" numeric,
+    "DENOMINATORE" numeric
+ );
+
+CREATE TABLE "iC14_Italia_no_classe" (
+    "KAnno" integer NOT NULL,
+    "KAteneo" integer NOT NULL,
+    "NUMERATORE" numeric,
+    "DENOMINATORE" numeric
+ );
+
+CREATE TABLE "iC15_RomaTre" (
+    "KAnno" integer NOT NULL,
+    "KCdS" integer NOT NULL,
+    "KAteneo" integer NOT NULL,
+    "KGeografia" integer NOT NULL,
+    "KClasse" integer NOT NULL,
+    "NUMERATORE" numeric,
+    "DENOMINATORE" numeric
+ );
+
+ CREATE TABLE "iC15_Area" (
+    "KAnno" integer NOT NULL,
+    "KGeografia" integer NOT NULL,
+    "KClasse" integer NOT NULL,
+    "NUMERATORE" numeric,
+    "DENOMINATORE" numeric
+ );
+
+ CREATE TABLE "iC15_Italia" (
+    "KAnno" integer NOT NULL,
+    "KClasse" integer NOT NULL,
+    "NUMERATORE" numeric,
+    "DENOMINATORE" numeric
+ );
+
+CREATE TABLE "iC15_Area_no_classe" (
+    "KAnno" integer NOT NULL,
+    "KAteneo" integer NOT NULL,
+    "KGeografia" integer NOT NULL,
+    "NUMERATORE" numeric,
+    "DENOMINATORE" numeric
+ );
+
+CREATE TABLE "iC15_Italia_no_classe" (
+    "KAnno" integer NOT NULL,
+    "KAteneo" integer NOT NULL,
+    "NUMERATORE" numeric,
+    "DENOMINATORE" numeric
+ );
+
+CREATE TABLE "iC15BIS_RomaTre" (
+    "KAnno" integer NOT NULL,
+    "KCdS" integer NOT NULL,
+    "KAteneo" integer NOT NULL,
+    "KGeografia" integer NOT NULL,
+    "KClasse" integer NOT NULL,
+    "NUMERATORE" numeric,
+    "DENOMINATORE" numeric
+ );
+
+ CREATE TABLE "iC15BIS_Area" (
+    "KAnno" integer NOT NULL,
+    "KGeografia" integer NOT NULL,
+    "KClasse" integer NOT NULL,
+    "NUMERATORE" numeric,
+    "DENOMINATORE" numeric
+ );
+
+ CREATE TABLE "iC15BIS_Italia" (
+    "KAnno" integer NOT NULL,
+    "KClasse" integer NOT NULL,
+    "NUMERATORE" numeric,
+    "DENOMINATORE" numeric
+ );
+
+CREATE TABLE "iC15BIS_Area_no_classe" (
+    "KAnno" integer NOT NULL,
+    "KAteneo" integer NOT NULL,
+    "KGeografia" integer NOT NULL,
+    "NUMERATORE" numeric,
+    "DENOMINATORE" numeric
+ );
+
+CREATE TABLE "iC15BIS_Italia_no_classe" (
+    "KAnno" integer NOT NULL,
+    "KAteneo" integer NOT NULL,
+    "NUMERATORE" numeric,
+    "DENOMINATORE" numeric
+ );
+
+CREATE TABLE "iC16_RomaTre" (
+    "KAnno" integer NOT NULL,
+    "KCdS" integer NOT NULL,
+    "KAteneo" integer NOT NULL,
+    "KGeografia" integer NOT NULL,
+    "KClasse" integer NOT NULL,
+    "NUMERATORE" numeric,
+    "DENOMINATORE" numeric
+ );
+
+ CREATE TABLE "iC16_Area" (
+    "KAnno" integer NOT NULL,
+    "KGeografia" integer NOT NULL,
+    "KClasse" integer NOT NULL,
+    "NUMERATORE" numeric,
+    "DENOMINATORE" numeric
+ );
+
+ CREATE TABLE "iC16_Italia" (
+    "KAnno" integer NOT NULL,
+    "KClasse" integer NOT NULL,
+    "NUMERATORE" numeric,
+    "DENOMINATORE" numeric
+ );
+
+CREATE TABLE "iC16_Area_no_classe" (
+    "KAnno" integer NOT NULL,
+    "KAteneo" integer NOT NULL,
+    "KGeografia" integer NOT NULL,
+    "NUMERATORE" numeric,
+    "DENOMINATORE" numeric
+ );
+
+CREATE TABLE "iC16_Italia_no_classe" (
+    "KAnno" integer NOT NULL,
+    "KAteneo" integer NOT NULL,
+    "NUMERATORE" numeric,
+    "DENOMINATORE" numeric
+ );
+
+CREATE TABLE "iC21_RomaTre" (
+    "KAnno" integer NOT NULL,
+    "KCdS" integer NOT NULL,
+    "KAteneo" integer NOT NULL,
+    "KGeografia" integer NOT NULL,
+    "KClasse" integer NOT NULL,
+    "NUMERATORE" numeric,
+    "DENOMINATORE" numeric
+ );
+
+ CREATE TABLE "iC21_Area" (
+    "KAnno" integer NOT NULL,
+    "KGeografia" integer NOT NULL,
+    "KClasse" integer NOT NULL,
+    "NUMERATORE" numeric,
+    "DENOMINATORE" numeric
+ );
+
+ CREATE TABLE "iC21_Italia" (
+    "KAnno" integer NOT NULL,
+    "KClasse" integer NOT NULL,
+    "NUMERATORE" numeric,
+    "DENOMINATORE" numeric
+ );
+
+CREATE TABLE "iC21_Area_no_classe" (
+    "KAnno" integer NOT NULL,
+    "KAteneo" integer NOT NULL,
+    "KGeografia" integer NOT NULL,
+    "NUMERATORE" numeric,
+    "DENOMINATORE" numeric
+ );
+
+CREATE TABLE "iC21_Italia_no_classe" (
+    "KAnno" integer NOT NULL,
+    "KAteneo" integer NOT NULL,
+    "NUMERATORE" numeric,
+    "DENOMINATORE" numeric
+ );
+
+
